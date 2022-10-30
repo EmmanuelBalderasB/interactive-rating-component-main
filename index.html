@@ -6,21 +6,19 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" type="text/css" href="/style.css">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
   <title>Frontend Mentor | Interactive rating component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
   <!-- Rating state start -->
-  <main id="container">
+  <main>
+    <div class="container">
     <div id="p1">
-      <h1>
+      <img id="star" src="/images/icon-star.svg">
+      <h1 id="question">
         How did we do?
       </h1>
       <p id="explanation">
@@ -28,7 +26,11 @@
         to help us improve our offering!
       </p>
       <div class="btn-group">
-        1 2 3 4 5
+        <button id="1">1</button>
+        <button id="2">2</button>
+        <button id="3">3</button>
+        <button id="4">4</button>
+        <button id="5">5</button>
       </div>
       <button id="submit">
         Submit
@@ -38,9 +40,13 @@
 
   <!-- Thank you state start -->
     <div id="p2">
-      <p id="selection">
-        You selected <!-- Add rating here --> out of 5
-      </p>
+      <img src="/images/illustration-thank-you.svg" id="thanks">
+      <div class="selection">
+        <p id="you">You selected</p>
+        <p id="num"></p>
+        <p id="total">out of 5</p>
+      </div>
+      <div>
       <h1 id="thanku">
         Thank you!
       </h1>
@@ -49,13 +55,15 @@
         don’t hesitate to get in touch!
       </p>
     </div>
+  </div>
 </main>
   <!-- Thank you state end -->
 
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/EmmanuelBalderasB" target="_blank">Emmanuel Balderas</a>.
   </div>
 </body>
+<script src="/main.js"></script>
 </html>
