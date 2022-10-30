@@ -15,4 +15,4 @@
 .DS_Store
 .prettierignore
 # Omit design folder
-design/
+./design/
