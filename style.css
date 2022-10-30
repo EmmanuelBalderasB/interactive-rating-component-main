@@ -16,7 +16,6 @@ body{
 main{
     margin: auto;
     width: 50%;
-    min-width: 375px;
 }
 
 button{
