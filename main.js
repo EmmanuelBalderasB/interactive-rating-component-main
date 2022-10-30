@@ -34,8 +34,7 @@ try {
             submittedNum = i;
             isClicked = true;
             num.innerHTML = i
-        }
-        
+        }        
         btn.addEventListener('mouseover', mouseOver, true);
         btn.addEventListener('mouseout', mouseOut, true);
         btn.addEventListener('click', clicked, true); 
