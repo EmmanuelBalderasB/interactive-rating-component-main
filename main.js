@@ -26,11 +26,11 @@ try {
         function clicked() {
             for (let j = i; j >= 1; j--) {
                 let btn2 = document.getElementById(`${j}`)
-    
                 btn2.removeEventListener('mouseout', mouseOut, true);
                 btn2.removeEventListener('mouseover', mouseOver, true);
             }
-            
+            btn.style.backgroundColor = 'hsl(217, 12%, 63%)';
+            btn.style.color = 'hsl(0, 0%, 100%)';
             submittedNum = i;
             isClicked = true;
             num.innerHTML = i
