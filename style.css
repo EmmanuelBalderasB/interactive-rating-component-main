@@ -33,7 +33,7 @@ button{
     background: -moz-linear-gradient(hsl(213, 19%, 18%),hsl(216, 12%, 8%));
     position: absolute;
     top: 50%;
-    left: 42%;
+    left: 39%;
     transform: translate(0, -50%);
     border-radius: 10%;
     display: flex; /*added*/
